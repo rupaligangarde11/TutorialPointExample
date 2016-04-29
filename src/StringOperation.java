@@ -6,9 +6,18 @@ public class StringOperation {
         searchLastString(firstString);
         System.out.println(removeCharAt(firstString, position));
         reverseString(firstString);
+        splitString(firstString);
 
 
         return;
+    }
+
+    private static void splitString(String firstString) {
+        String delimeter = ",";
+        String[] spittedString;
+        spittedString = firstString.split(delimeter);
+        for(String eachString : spittedString)
+            System.out.println(eachString);
     }
 
     private static void reverseString(String firstString) {
