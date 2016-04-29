@@ -5,8 +5,16 @@ public class StringOperation {
 
         searchLastString(firstString);
         System.out.println(removeCharAt(firstString, position));
+        reverseString(firstString);
+
 
         return;
+    }
+
+    private static void reverseString(String firstString) {
+        StringBuilder reverseString = new StringBuilder(firstString);
+        reverseString.reverse().toString();
+        System.out.println(reverseString);
     }
 
     private static String removeCharAt(String firstString, int position) {
