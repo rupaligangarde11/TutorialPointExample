@@ -1,6 +1,7 @@
 public class StringOperation {
     public  static void main(String args[]){
         String firstString = "Hello World, Hello Reader";
+        String secondString = "I said Hello";
         int position =3;
 
         searchLastString(firstString);
@@ -9,7 +10,13 @@ public class StringOperation {
         splitString(firstString);
 
 
+        matchesRegion(firstString, secondString);
+
         return;
+    }
+
+    private static void matchesRegion(String firstString, String secondString) {
+        System.out.println(firstString.regionMatches(0,secondString,7,5));
     }
 
     private static void splitString(String firstString) {
