@@ -18,7 +18,6 @@ public class StringOperation {
         unicodeAt(firstString);
 
 
-        return;
     }
 
     private static void unicodeAt(String firstString) {

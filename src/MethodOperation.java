@@ -1,10 +1,10 @@
-public class MethodOperation {
+class MethodOperation {
 
-    public MethodOperation() {
+    MethodOperation() {
         System.out.println("Simple overloading");
     }
 
-    public MethodOperation(String name){
+    MethodOperation(String name){
         System.out.println("Parameterized constructor" + name);
     }
 
