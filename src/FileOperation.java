@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 
 public class FileOperation {
 
@@ -14,7 +15,14 @@ public class FileOperation {
             e.printStackTrace();
         }
 
+        fileLastModifiedAt(firstFile);
         compareFileBasedOnFilePath(firstFile, secondFile);
+    }
+
+    private static void fileLastModifiedAt(File firstFile) {
+        Long lastModified = firstFile.lastModified();
+        Date date = new Date(lastModified);
+        System.out.println("file1 was last modified on" + date);
     }
 
     private static void isFileCreated(File file) throws IOException {
